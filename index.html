@@ -23,10 +23,11 @@
                 <div class="logo">Portafolio <span>&lt;/&gt;</span></div>
                 <div class="nav-right">
                     <ul class="nav-links">
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#about">Sobre mí</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+                        <li><a href="#about" data-i18n="nav_about">Sobre mí</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+                        <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
                     </ul>
                     <div class="nav-socials-group">
                         <a href="https://wa.me/18295561574" target="_blank" class="nav-social" aria-label="WhatsApp">
@@ -50,6 +51,15 @@
                             </svg>
                         </a>
                     </div>
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <button id="lang-toggle" class="lang-toggle" aria-label="Cambiar idioma">EN</button>
                     <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
                         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -92,8 +102,9 @@
                     </h1>
                     <p id="typewriter-desc"></p>
                     <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                        <a href="#contact" class="btn glass" style="margin-left: 1rem; color: white;">Contactar</a>
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero_ver_proyectos">Ver Proyectos</a>
+                        <a href="#contact" class="btn glass" style="margin-left: 1rem; color: white;"
+                            data-i18n="hero_contactar">Contactar</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +115,7 @@
             <div class="container">
                 <div class="grid-2">
                     <div class="about-text">
-                        <h2 class="section-title">Sobre <span>Mí</span></h2>
+                        <h2 class="section-title" data-i18n="about_title">Sobre <span>Mí</span></h2>
                         <p id="typewriter-about"></p>
 
                         <p id="typewriter-hobbies"></p>
@@ -122,7 +133,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>4+</h3>
-                                    <p>Años Exp.</p>
+                                    <p data-i18n="stat_exp">Años Exp.</p>
                                 </div>
                             </div>
 
@@ -137,7 +148,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>UAPA</h3>
-                                    <p>Educación</p>
+                                    <p data-i18n="stat_edu">Educación</p>
                                 </div>
                             </div>
 
@@ -152,7 +163,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>10+</h3>
-                                    <p>Tecnologías</p>
+                                    <p data-i18n="stat_tech">Tecnologías</p>
                                 </div>
                             </div>
 
@@ -170,7 +181,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>B1</h3>
-                                    <p>Inglés</p>
+                                    <p data-i18n="stat_lang">Inglés</p>
                                 </div>
                             </div>
 
@@ -185,7 +196,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>3+</h3>
-                                    <p>QA Exp.</p>
+                                    <p data-i18n="stat_qa">QA Exp.</p>
                                 </div>
                             </div>
 
@@ -199,7 +210,7 @@
                                 </div>
                                 <div class="stat-info">
                                     <h3>Freelance</h3>
-                                    <p>Activo</p>
+                                    <p data-i18n="stat_active">Activo</p>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +227,7 @@
         <section id="projects" class="section">
             <div id="skill-rain" class="skill-rain-container"></div>
             <div class="container">
-                <h2 class="section-title">Proyectos <span>Destacados</span></h2>
+                <h2 class="section-title" data-i18n="projects_title">Proyectos <span>Destacados</span></h2>
                 <div class="projects-grid">
                     <!-- Proyecto 1 -->
                     <div class="project-card glass">
@@ -227,8 +238,9 @@
                             <div class="placeholder-img" style="display: none; color: #333;">Pragmatica SRL</div>
                         </div>
                         <div class="project-info">
-                            <h3>Pragmatica SRL</h3>
-                            <p>Diseño y desarrollo de la página web corporativa oficial, enfocada en soluciones
+                            <h3 data-i18n="prj1_title">Pragmatica SRL</h3>
+                            <p data-i18n="prj1_desc">Diseño y desarrollo de la página web corporativa oficial, enfocada
+                                en soluciones
                                 empresariales y consultoría.</p>
                             <div class="tags">
                                 <span>HTML/CSS</span>
@@ -236,8 +248,8 @@
                                 <span>UX/UI</span>
                             </div>
                             <a href="https://www.pragmatica.com.do/index.html" target="_blank" class="btn btn-primary"
-                                style="margin-top: 1rem; width: 100%; text-align: center; padding: 0.5rem;">Visitar
-                                Sitio</a>
+                                style="margin-top: 1rem; width: 100%; text-align: center; padding: 0.5rem;"
+                                data-i18n="visit_site">Visitar Sitio</a>
                         </div>
                     </div>
                     <!-- Proyecto 2 -->
@@ -249,8 +261,9 @@
                             <div class="placeholder-img" style="display: none; color: #333;">Intertek</div>
                         </div>
                         <div class="project-info">
-                            <h3>Intertek TQA</h3>
-                            <p>Servicios de QA y desarrollo de una plataforma web de gestión de información interna.</p>
+                            <h3 data-i18n="prj2_title">Intertek TQA</h3>
+                            <p data-i18n="prj2_desc">Servicios de QA y desarrollo de una plataforma web de gestión de
+                                información interna.</p>
                             <div class="tags">
                                 <span>Laravel</span>
                                 <span>MySQL</span>
@@ -268,8 +281,9 @@
                             <div class="placeholder-img" style="display: none; color: #333;">CEO Consultoría</div>
                         </div>
                         <div class="project-info">
-                            <h3>CEO Consultoría</h3>
-                            <p>Sistema de inventario para dispositivos móviles realizado durante pasantía en CEO
+                            <h3 data-i18n="prj3_title">CEO Consultoría</h3>
+                            <p data-i18n="prj3_desc">Sistema de inventario para dispositivos móviles realizado durante
+                                pasantía en CEO
                                 Consultoría. Permite gestionar productos en tiempo real.</p>
                             <div class="tags">
                                 <span>HTML/CSS</span>
@@ -288,8 +302,9 @@
                             <div class="placeholder-img" style="display: none; color: #333;">A&T Flamingo</div>
                         </div>
                         <div class="project-info">
-                            <h3>A&T Flamingo</h3>
-                            <p>Rediseño básico de sitio web de comercio electrónico dedicado a la venta de productos
+                            <h3 data-i18n="prj4_title">A&T Flamingo</h3>
+                            <p data-i18n="prj4_desc">Rediseño básico de sitio web de comercio electrónico dedicado a la
+                                venta de productos
                                 desechables.</p>
                             <div class="tags">
                                 <span>WordPress</span>
@@ -308,8 +323,9 @@
                                 Portafolio</div>
                         </div>
                         <div class="project-info">
-                            <h3>Diseño de Portafolios</h3>
-                            <p>Desarrollo y creación de portafolios personales y profesionales utilizando técnicas
+                            <h3 data-i18n="prj5_title">Diseño de Portafolios</h3>
+                            <p data-i18n="prj5_desc">Desarrollo y creación de portafolios personales y profesionales
+                                utilizando técnicas
                                 modernas de diseño
                                 como
                                 Glassmorphism y animaciones dinámicas.</p>
@@ -330,8 +346,9 @@
                             <div class="placeholder-img" style="display: none; color: #333;">Colaboración</div>
                         </div>
                         <div class="project-info">
-                            <h3>Proyectos Colaborativos</h3>
-                            <p>Participación proactiva en el desarrollo de ideas y optimización de código en equipos
+                            <h3 data-i18n="prj6_title">Proyectos Colaborativos</h3>
+                            <p data-i18n="prj6_desc">Participación proactiva en el desarrollo de ideas y optimización de
+                                código en equipos
                                 multidisciplinarios, buscando siempre la excelencia técnica y funcional.</p>
                             <div class="tags">
                                 <span>Teamwork</span>
@@ -348,7 +365,7 @@
         <section id="contact" class="section">
             <div id="skill-rain-contact" class="skill-rain-container"></div>
             <div class="container" style="text-align: center;">
-                <h2 class="section-title">¿Tienes un <span>Proyecto?</span></h2>
+                <h2 class="section-title" data-i18n="contact_title">¿Tienes un <span>Proyecto?</span></h2>
 
                 <div class="contact-interactive-wrapper">
 
@@ -363,7 +380,7 @@
                                 </svg>
                             </div>
                             <span>WhatsApp</span>
-                            <p>Escríbeme por mensaje</p>
+                            <p data-i18n="contact_wa">Escríbeme por mensaje</p>
                         </a>
 
                         <a href="mailto:enghemejia4@gmail.com" class="glass contact-option-card">
@@ -378,7 +395,7 @@
                                 </svg>
                             </div>
                             <span>Email</span>
-                            <p>Envíame un correo</p>
+                            <p data-i18n="contact_email">Envíame un correo</p>
                         </a>
 
                         <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
@@ -395,7 +412,7 @@
                                 </svg>
                             </div>
                             <span>LinkedIn</span>
-                            <p>Conecta conmigo</p>
+                            <p data-i18n="contact_li">Conecta conmigo</p>
                         </a>
                     </div>
                 </div>
@@ -407,10 +424,12 @@
     <footer>
         <div id="skill-rain-footer" class="skill-rain-container"></div>
         <div class="container footer-content" style="justify-content: center;">
-            <p>&copy; 2026 Portafolio Profesional. Todos los derechos reservados.</p>
+            <p>&copy; <span data-i18n="footer_rights">2026 Portafolio Profesional. Todos los derechos reservados.</span>
+            </p>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 
 </body>

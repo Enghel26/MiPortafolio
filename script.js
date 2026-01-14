@@ -83,9 +83,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
+    const langToggle = document.getElementById('lang-toggle');
     const currentTheme = localStorage.getItem('theme') || 'dark';
+    let currentLang = localStorage.getItem('lang') || 'es';
 
     document.documentElement.setAttribute('data-theme', currentTheme);
+
+    function applyLanguage(lang) {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                if (translations[lang][key].includes('<span>')) {
+                    el.innerHTML = translations[lang][key];
+                } else {
+                    el.innerText = translations[lang][key];
+                }
+            }
+        });
+        if (langToggle) {
+            langToggle.innerText = lang === 'es' ? 'EN' : 'ES';
+        }
+    }
+
+    applyLanguage(currentLang);
 
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
@@ -97,9 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            localStorage.setItem('lang', currentLang);
+            applyLanguage(currentLang);
+            // Optional: Reload or restart typewriter if needed
+            location.reload(); // Simple way to restart animations with new language
+        });
+    }
+
     // Typewriter Effect
-    const nameText = "Enghel Mejía Severino";
-    const descText = "Desarrollador Web Full-Stack y estudiante de Ingeniería en la Universidad UAPA. Transformo ideas complejas en experiencias digitales de alto impacto, combinando precisión técnica con diseño innovador.";
+    const nameText = translations[currentLang].tw_name;
+    const descText = translations[currentLang].tw_desc;
 
     const nameContainer = document.getElementById('typewriter-name');
     const descContainer = document.getElementById('typewriter-desc');
@@ -108,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let descIndex = 0;
 
     function typeName() {
+        if (!nameContainer) return;
         if (nameIndex < nameText.length) {
             nameContainer.textContent += nameText.charAt(nameIndex);
             nameIndex++;
@@ -118,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function typeDesc() {
+        if (!descContainer) return;
         if (descIndex < descText.length) {
             descContainer.textContent += descText.charAt(descIndex);
             descIndex++;
@@ -130,8 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // About Me Typewriter with Scroll Trigger
-    const aboutText = "Como Desarrollador Full-Stack y estudiante de Ingeniería de Software en la Universidad UAPA, mi enfoque va más allá del código: construyo soluciones escalables y centradas en el usuario. Mi trayectoria previa como QA me otorga una ventaja competitiva, garantizando que cada línea de código sea sinónimo de calidad y rendimiento.";
-    const aboutText2 = "Me apasiona los deportes y realizar actividades físicas, pasar tiempo escuchando música y jugar videojuegos.";
+    const aboutText = translations[currentLang].tw_about;
+    const aboutText2 = translations[currentLang].tw_hobbies;
 
     const aboutContainer = document.getElementById('typewriter-about');
     const hobbiesContainer = document.getElementById('typewriter-hobbies');
@@ -173,5 +205,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (aboutContainer) {
         observer.observe(aboutContainer);
+    }
+
+    // Mobile Menu Toggle logic
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (mobileMenuToggle && navLinksContainer) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+            const isExpanded = navLinksContainer.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close menu when clicking a link
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
     }
 });

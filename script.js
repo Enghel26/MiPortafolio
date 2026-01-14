@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typewriter Effect
     const nameText = "Enghel Mejía Severino";
-    const descText = "Estudiante de Ingeniería de Software en la UAPA. Desarrollador Web enfocado en crear experiencias digitales excepcionales con HTML, CSS, JS, Laravel y Blazor.";
+    const descText = "Desarrollador Web Full-Stack y estudiante de Ingeniería en la Universidad UAPA. Transformo ideas complejas en experiencias digitales de alto impacto, combinando precisión técnica con diseño innovador.";
 
     const nameContainer = document.getElementById('typewriter-name');
     const descContainer = document.getElementById('typewriter-desc');
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // About Me Typewriter with Scroll Trigger
-    const aboutText = "Soy estudiante de Ingeniería en Software en el UAPA con 3 años de experiencia como QA, lo que me ha dado un ojo crítico para el detalle y la calidad. Mi pasión y enfoque principal es el desarrollo web, donde doy vida a ideas utilizando tecnologías modernas y robustas.";
+    const aboutText = "Como Desarrollador Full-Stack y estudiante de Ingeniería de Software en la Universidad UAPA, mi enfoque va más allá del código: construyo soluciones escalables y centradas en el usuario. Mi trayectoria previa como QA me otorga una ventaja competitiva, garantizando que cada línea de código sea sinónimo de calidad y rendimiento.";
     const aboutText2 = "Me apasiona los deportes y realizar actividades físicas, pasar tiempo escuchando música y jugar videojuegos.";
 
     const aboutContainer = document.getElementById('typewriter-about');

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer | Portfolio</title>
+    <meta name="description"
+        content="Portfolio profesional de Desarrollador Web con enfoque en interfaces modernas y alto rendimiento.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22 fill=%22%233498db%22 font-family=%22monospace%22 font-weight=%22bold%22>&lt;/&gt;</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container nav-container">
+            <nav>
+                <div class="logo">Portafolio <span>&lt;/&gt;</span></div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                    <div class="nav-socials-group">
+                        <a href="https://wa.me/18295561574" target="_blank" class="nav-social" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="brand-whatsapp">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049a11.802 11.802 0 001.583 5.877L0 24l6.305-1.654a11.807 11.807 0 005.738 1.482h.005c6.634 0 12.045-5.413 12.048-12.051a11.75 11.75 0 00-3.483-8.52z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
+                            class="nav-social" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="brand-linkedin">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="carousel-container">
+                <div class="carousel-slide active" style="background-image: url('img/fondo/2150010125.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/fondo/61842.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('img/fondo/82.jpg');"></div>
+                <div class="carousel-overlay"></div>
+            </div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="hero-content fade-in">
+                    <h1 class="code-title">
+                        <span class="keyword">const</span> <span class="variable">nombre</span> = <span
+                            class="string">"</span><span id="typewriter-name" class="string"></span><span
+                            class="string">"</span>;
+                    </h1>
+                    <p id="typewriter-desc"></p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn glass" style="margin-left: 1rem; color: white;">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div id="hobby-rain" class="skill-rain-container"></div>
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-text">
+                        <h2 class="section-title">Sobre <span>Mí</span></h2>
+                        <p id="typewriter-about"></p>
+
+                        <p id="typewriter-hobbies"></p>
+
+
+                        <div class="stats-grid modern">
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>4+</h3>
+                                    <p>Años Exp.</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>UAPA</h3>
+                                    <p>Educación</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>10+</h3>
+                                    <p>Tecnologías</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>B1</h3>
+                                    <p>Inglés</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>3+</h3>
+                                    <p>QA Exp.</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-card glass interactive">
+                                <div class="stat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-info">
+                                    <h3>Freelance</h3>
+                                    <p>Activo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual glass">
+                        <img src="img/Fotos/Perfil.JPEG" alt="Enghel Mejía Severino"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-img" style="display: none;">Enghel</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div id="skill-rain" class="skill-rain-container"></div>
+            <div class="container">
+                <h2 class="section-title">Proyectos <span>Destacados</span></h2>
+                <div class="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card glass">
+                        <div class="project-img" style="background: white;">
+                            <img src="img/Clientes/PRAGMATICA.png" alt="Logo Pragmatica SRL"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                            <div class="placeholder-img" style="display: none; color: #333;">Pragmatica SRL</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Pragmatica SRL</h3>
+                            <p>Diseño y desarrollo de la página web corporativa oficial, enfocada en soluciones
+                                empresariales y consultoría.</p>
+                            <div class="tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>UX/UI</span>
+                            </div>
+                            <a href="https://www.pragmatica.com.do/index.html" target="_blank" class="btn btn-primary"
+                                style="margin-top: 1rem; width: 100%; text-align: center; padding: 0.5rem;">Visitar
+                                Sitio</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="project-card glass">
+                        <div class="project-img" style="background: white;">
+                            <img src="img/Clientes/Intertek.png" alt="Logo Intertek"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                            <div class="placeholder-img" style="display: none; color: #333;">Intertek</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Intertek TQA</h3>
+                            <p>Servicios de QA y desarrollo de una plataforma web de gestión de información interna.</p>
+                            <div class="tags">
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                                <span>QA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="project-card glass">
+                        <div class="project-img" style="background: white;">
+                            <img src="img/Clientes/Ceo.png" alt="Logo CEO Consultoría"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                            <div class="placeholder-img" style="display: none; color: #333;">CEO Consultoría</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>CEO Consultoría</h3>
+                            <p>Sistema de inventario para dispositivos móviles realizado durante pasantía en CEO
+                                Consultoría. Permite gestionar productos en tiempo real.</p>
+                            <div class="tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>API REST</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="project-card glass">
+                        <div class="project-img" style="background: white;">
+                            <img src="img/Clientes/atflamingo.png" alt="A&T Flamingo"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                            <div class="placeholder-img" style="display: none; color: #333;">A&T Flamingo</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>A&T Flamingo</h3>
+                            <p>Rediseño básico de sitio web de comercio electrónico dedicado a la venta de productos
+                                desechables.</p>
+                            <div class="tags">
+                                <span>WordPress</span>
+                                <span>WooCommerce</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 5 -->
+                    <div class="project-card glass">
+                        <div class="project-img" style="background: white;">
+                            <img src="img/Clientes/Portfolio_v3.png" alt="Mi Portafolio"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                            <div class="placeholder-img"
+                                style="display: none; color: #333; font-weight: bold; background: transparent;">Mi
+                                Portafolio</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Diseño de Portafolios</h3>
+                            <p>Desarrollo y creación de portafolios personales y profesionales utilizando técnicas
+                                modernas de diseño
+                                como
+                                Glassmorphism y animaciones dinámicas.</p>
+                            <div class="tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>UX/UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div id="skill-rain-contact" class="skill-rain-container"></div>
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">¿Tienes un <span>Proyecto?</span></h2>
+
+                <div class="contact-interactive-wrapper">
+
+                    <div id="contact-options" class="contact-options-container">
+                        <a href="https://wa.me/18295561574" target="_blank" class="glass contact-option-card">
+                            <div class="option-icon whatsapp">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049a11.802 11.802 0 001.583 5.877L0 24l6.305-1.654a11.807 11.807 0 005.738 1.482h.005c6.634 0 12.045-5.413 12.048-12.051a11.75 11.75 0 00-3.483-8.52z" />
+                                </svg>
+                            </div>
+                            <span>WhatsApp</span>
+                            <p>Escríbeme por mensaje</p>
+                        </a>
+
+                        <a href="mailto:enghemejia4@gmail.com" class="glass contact-option-card">
+                            <div class="option-icon email">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <span>Email</span>
+                            <p>Envíame un correo</p>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
+                            class="glass contact-option-card">
+                            <div class="option-icon linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <span>LinkedIn</span>
+                            <p>Conecta conmigo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="skill-rain-footer" class="skill-rain-container"></div>
+        <div class="container footer-content" style="justify-content: center;">
+            <p>&copy; 2026 Portafolio Profesional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -30,25 +30,20 @@ const translations = {
         // Services Page
         services_title: "Mis <span>Servicios</span>",
         srv_web_title: "Desarrollo Freelance",
-        srv_web_desc: "Creación de aplicaciones web Full-stack a medida utilizando tecnologías modernas como HTML, CSS, JavaScript, Laravel y Blazor. Enfoque en rendimiento y experiencia de usuario.",
+        srv_web_desc: "Desarrollo de todo tipo de sistemas web a medida, desde plataformas de gestión de información hasta páginas informativas, utilizando HTML, CSS, JavaScript, Laravel y Blazor. Enfoque en escalabilidad y UX.",
         srv_qa_title: "Optimización y QA",
         srv_qa_desc: "Auditoría exhaustiva de software existente para identificar errores, cuellos de botella y vulnerabilidades. Aseguro la calidad final de tu producto.",
-        srv_maint_title: "Mantenimiento y Soporte",
-        srv_maint_desc: "Soporte técnico continuo, actualización de dependencias y mejoras incrementales para que tu negocio nunca se detenga.",
+        srv_maint_title: "Mejoras de Proyectos",
+        srv_maint_desc: "Realizo mejoras continuas y actualizaciones para proyectos ya realizados, asegurando que sigan creciendo y adaptándose a nuevas necesidades.",
         btn_index: "Volver al Inicio",
-        // Individual Projects
         prj1_title: "Pragmatica SRL",
         prj1_desc: "Diseño y desarrollo de la página web corporativa oficial, enfocada en soluciones empresariales y consultoría.",
-        prj2_title: "Intertek TQA",
-        prj2_desc: "Servicios de QA y desarrollo de una plataforma web de gestión de información interna.",
-        prj3_title: "CEO Consultoría",
-        prj3_desc: "Sistema de inventario para dispositivos móviles realizado durante pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.",
-        prj4_title: "A&T Flamingo",
-        prj4_desc: "Rediseño básico de sitio web de comercio electrónico dedicado a la venta de productos desechables.",
-        prj5_title: "Diseño de Portafolios",
-        prj5_desc: "Desarrollo y creación de portafolios personales y profesionales utilizando técnicas modernas de diseño como Glassmorphism y animaciones dinámicas.",
-        prj6_title: "Proyectos Colaborativos",
-        prj6_desc: "Participación proactiva en el desarrollo de ideas y optimización de código en equipos multidisciplinarios, buscando siempre la excelencia técnica y funcional."
+        prj2_title: "CEO Consultoría",
+        prj2_desc: "Sistema de inventario para dispositivos móviles realizado durante pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.",
+        prj3_title: "Proyectos Colaborativos",
+        prj3_desc: "Participación proactiva en el desarrollo de ideas y optimización de código en equipos multidisciplinarios, buscando siempre la excelencia técnica y funcional.",
+        prj4_title: "Aseguramiento de Calidad (QA)",
+        prj4_desc: "Validación y verificación exhaustiva de requerimientos de software para garantizar los estándares de calidad y certificar la correcta implementación de las funcionalidades desarrolladas."
     },
     en: {
         nav_home: "Home",
@@ -81,24 +76,20 @@ const translations = {
         // Services Page
         services_title: "My <span>Services</span>",
         srv_web_title: "Freelance Development",
-        srv_web_desc: "Creation of custom Full-stack web applications using modern technologies like HTML, CSS, JavaScript, Laravel, and Blazor. Focused on performance and user experience.",
+        srv_web_desc: "Development of all types of custom web systems, from information management platforms to informative pages, using HTML, CSS, JavaScript, Laravel, and Blazor. Focused on scalability and UX.",
         srv_qa_title: "Optimization & QA",
         srv_qa_desc: "Comprehensive auditing of existing software to identify bugs, bottlenecks, and vulnerabilities. I ensure the final quality of your product.",
-        srv_maint_title: "Maintenance & Support",
-        srv_maint_desc: "Continuous technical support, dependency updates, and incremental improvements to keep your business running smoothly.",
+        srv_maint_title: "Project Improvements",
+        srv_maint_desc: "I perform continuous improvements and updates for existing projects, ensuring they keep growing and adapting to new needs.",
         btn_index: "Back to Home",
         // Individual Projects
         prj1_title: "Pragmatica SRL",
         prj1_desc: "Design and development of the official corporate website, focused on business solutions and consulting.",
-        prj2_title: "Intertek TQA",
-        prj2_desc: "QA services and development of an internal information management web platform.",
-        prj3_title: "CEO Consulting",
-        prj3_desc: "Inventory system for mobile devices developed during an internship at CEO Consulting. Allows real-time product management.",
-        prj4_title: "A&T Flamingo",
-        prj4_desc: "Basic redesign of an e-commerce website dedicated to the sale of disposable products.",
-        prj5_title: "Portfolio Design",
-        prj5_desc: "Development and creation of personal and professional portfolios using modern design techniques such as Glassmorphism and dynamic animations.",
-        prj6_title: "Collaborative Projects",
-        prj6_desc: "Proactive participation in the development of ideas and code optimization in multidisciplinary teams, always seeking technical and functional excellence."
+        prj2_title: "CEO Consulting",
+        prj2_desc: "Inventory system for mobile devices developed during an internship at CEO Consulting. Allows real-time product management.",
+        prj3_title: "Collaborative Projects",
+        prj3_desc: "Proactive participation in the development of ideas and code optimization in multidisciplinary teams, always seeking technical and functional excellence.",
+        prj4_title: "Quality Assurance (QA)",
+        prj4_desc: "Comprehensive validation and verification of software requirements to guarantee quality standards and certify the correct implementation of developed functionalities."
     }
 };

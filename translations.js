@@ -43,7 +43,9 @@ const translations = {
         prj3_title: "Proyectos Colaborativos",
         prj3_desc: "Participación proactiva en el desarrollo de ideas y optimización de código en equipos multidisciplinarios, buscando siempre la excelencia técnica y funcional.",
         prj4_title: "Aseguramiento de Calidad (QA)",
-        prj4_desc: "Validación y verificación exhaustiva de requerimientos de software para garantizar los estándares de calidad y certificar la correcta implementación de las funcionalidades desarrolladas."
+        prj4_desc: "Validación y verificación exhaustiva de requerimientos de software para garantizar los estándares de calidad y certificar la correcta implementación de las funcionalidades desarrolladas.",
+        prj5_title: "Mundo Airee",
+        prj5_desc: "Diseño y desarrollo de página web informativa con catálogo de productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos."
     },
     en: {
         nav_home: "Home",
@@ -90,6 +92,8 @@ const translations = {
         prj3_title: "Collaborative Projects",
         prj3_desc: "Proactive participation in the development of ideas and code optimization in multidisciplinary teams, always seeking technical and functional excellence.",
         prj4_title: "Quality Assurance (QA)",
-        prj4_desc: "Comprehensive validation and verification of software requirements to guarantee quality standards and certify the correct implementation of developed functionalities."
+        prj4_desc: "Comprehensive validation and verification of software requirements to guarantee quality standards and certify the correct implementation of developed functionalities.",
+        prj5_title: "Mundo Airee",
+        prj5_desc: "Design and development of an informative website with a product catalog built in Laravel, optimized for showcasing equipment and services."
     }
 };

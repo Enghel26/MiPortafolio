@@ -9,7 +9,7 @@
         content="Portfolio profesional de Desarrollador Web con enfoque en interfaces modernas y alto rendimiento.">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22 fill=%22%233498db%22 font-family=%22monospace%22 font-weight=%22bold%22>&lt;/&gt;</text></svg>">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2.1">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -228,114 +228,124 @@
             <div id="skill-rain" class="skill-rain-container"></div>
             <div class="container">
                 <h2 class="section-title" data-i18n="projects_title">Proyectos <span>Destacados</span></h2>
-                <div class="projects-grid">
+                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; align-items: stretch;">
                     <!-- ============================================================ -->
                     <!-- [PROYECTO FIJADO #1]: MANTENER SIEMPRE A PRAGMATICA SRL DE PRIMERO -->
                     <!-- ============================================================ -->
-                    <div class="project-card glass" id="project-pragmatica">
-                        <div class="project-img" style="background: white;">
+                    <div class="project-card glass" id="project-pragmatica" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
                             <img src="img/Clientes/PRAGMATICA.png" alt="Logo Pragmatica SRL"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                                 style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
                             <div class="placeholder-img" style="display: none; color: #333;">Pragmatica SRL</div>
                         </div>
-                        <div class="project-info">
-                            <h3 data-i18n="prj1_title">Pragmatica SRL</h3>
-                            <p data-i18n="prj1_desc">Diseño y desarrollo de la página web corporativa oficial, enfocada
-                                en soluciones
-                                empresariales y consultoría.</p>
-                            <div class="tags">
-                                <span>HTML/CSS</span>
-                                <span>JavaScript</span>
-                                <span>UX/UI</span>
+                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+                            <div class="project-body">
+                                <h3 data-i18n="prj1_title">Pragmatica SRL</h3>
+                                <p data-i18n="prj1_desc">Diseño y desarrollo de la página web corporativa oficial, enfocada
+                                    en soluciones
+                                    empresariales y consultoría.</p>
+                                <div class="tags" style="margin-bottom: 1.5rem;">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>UX/UI</span>
+                                </div>
                             </div>
                             <a href="https://www.pragmatica.com.do/index.html" target="_blank" class="btn btn-primary"
-                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem;"
+                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem; display: block;"
                                 data-i18n="visit_site">Visitar Sitio</a>
                         </div>
                     </div>
 
                     <!-- Proyecto 2: Mundo Airee -->
-                    <div class="project-card glass">
-                        <div class="project-img" style="background: white;">
+                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
                             <img src="img/Clientes/MundoAiree.jpg" alt="Logo Mundo Airee"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                                 style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
                             <div class="placeholder-img" style="display: none; color: #333;">Mundo Airee</div>
                         </div>
-                        <div class="project-info">
-                            <h3 data-i18n="prj5_title">Mundo Airee</h3>
-                            <p data-i18n="prj5_desc">Diseño y desarrollo de página web informativa con catálogo de
-                                productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos.</p>
-                            <div class="tags">
-                                <span>Laravel</span>
-                                <span>PHP</span>
-                                <span>HTML/CSS</span>
-                                <span>JavaScript</span>
+                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+                            <div class="project-body">
+                                <h3 data-i18n="prj5_title">Mundo Airee</h3>
+                                <p data-i18n="prj5_desc">Diseño y desarrollo de página web informativa con catálogo de
+                                    productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos.</p>
+                                <div class="tags" style="margin-bottom: 1.5rem;">
+                                    <span>Laravel</span>
+                                    <span>PHP</span>
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
                             </div>
                             <a href="https://mundoairee.com/" target="_blank" class="btn btn-primary"
-                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem;"
+                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem; display: block;"
                                 data-i18n="visit_site">Visitar Sitio</a>
                         </div>
                     </div>
 
                     <!-- Proyecto 3: Super Camionero (Super Industrial SRL) -->
-                    <div class="project-card glass">
-                        <div class="project-img" style="background: white;">
+                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
                             <img src="img/Clientes/SuperoCamioneroV2.png" alt="Super Camionero (Super Industrial SRL)"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                                 style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
                             <div class="placeholder-img" style="display: none; color: #333;">Super Camionero</div>
                         </div>
-                        <div class="project-info">
-                            <h3 data-i18n="prj6_title">Super Camionero (Super Industrial SRL)</h3>
-                            <p data-i18n="prj6_desc">Página web oficial desarrollada con Laravel, que cuenta con un panel administrativo dinámico para gestionar y actualizar en tiempo real las informaciones mostradas.</p>
-                            <div class="tags">
-                                <span>Laravel</span>
-                                <span>PHP</span>
-                                <span>Panel Admin</span>
-                                <span>MySQL</span>
-                                <span>JavaScript</span>
+                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                            <div class="project-body">
+                                <h3 data-i18n="prj6_title">Super Camionero (Super Industrial SRL)</h3>
+                                <p data-i18n="prj6_desc">Página web oficial desarrollada con Laravel, que cuenta con un panel administrativo dinámico para gestionar y actualizar en tiempo real las informaciones mostradas.</p>
+                                <div class="tags">
+                                    <span>Laravel</span>
+                                    <span>PHP</span>
+                                    <span>Panel Admin</span>
+                                    <span>MySQL</span>
+                                    <span>JavaScript</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Proyecto 4: Sistema de Vacaciones Super Camionero -->
-                    <div class="project-card glass">
-                        <div class="project-img" style="background: white;">
+                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
                             <img src="img/Clientes/SuperCamionero_Vacaciones.jpg" alt="Sistema de Vacaciones Super Camionero"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                                 style="width: 100%; height: 100%; object-fit: contain; padding: 15px;">
                             <div class="placeholder-img" style="display: none; color: #333;">Vacaciones & Permisos</div>
                         </div>
-                        <div class="project-info">
-                            <h3 data-i18n="prj7_title">Sistema de Vacaciones Super Camionero</h3>
-                            <p data-i18n="prj7_desc">Software web empresarial para la gestión y control integral de vacaciones y permisos laborales de los colaboradores, automatizando solicitudes y flujos de aprobación.</p>
-                            <div class="tags">
-                                <span>Web App</span>
-                                <span>Laravel / PHP</span>
-                                <span>Gestión RRHH</span>
-                                <span>Permisos</span>
-                                <span>Vacaciones</span>
+                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                            <div class="project-body">
+                                <h3 data-i18n="prj7_title">Sistema de Vacaciones Super Camionero</h3>
+                                <p data-i18n="prj7_desc">Software web empresarial para la gestión y control integral de vacaciones y permisos laborales de los colaboradores, automatizando solicitudes y flujos de aprobación.</p>
+                                <div class="tags">
+                                    <span>Web App</span>
+                                    <span>Laravel / PHP</span>
+                                    <span>Gestión RRHH</span>
+                                    <span>Permisos</span>
+                                    <span>Vacaciones</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Proyecto 5: CEO Consultoría -->
-                    <div class="project-card glass">
-                        <div class="project-img" style="background: white;">
+                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
+                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
                             <img src="img/Clientes/Ceo.png" alt="Logo CEO Consultoría"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                                 style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
                             <div class="placeholder-img" style="display: none; color: #333;">CEO Consultoría</div>
                         </div>
-                        <div class="project-info">
-                            <h3 data-i18n="prj2_title">CEO Consultoría</h3>
-                            <p data-i18n="prj2_desc">Sistema de inventario para dispositivos móviles realizado durante
-                                pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.</p>
-                            <div class="tags">
-                                <span>HTML/CSS</span>
-                                <span>JavaScript</span>
-                                <span>API REST</span>
+                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                            <div class="project-body">
+                                <h3 data-i18n="prj2_title">CEO Consultoría</h3>
+                                <p data-i18n="prj2_desc">Sistema de inventario para dispositivos móviles realizado durante
+                                    pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.</p>
+                                <div class="tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>API REST</span>
+                                </div>
                             </div>
                         </div>
                     </div>

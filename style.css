@@ -676,6 +676,9 @@ header.scrolled .nav-social {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
     transition: var(--transition);
     cursor: pointer;
@@ -691,10 +694,14 @@ header.scrolled .nav-social {
 
 .project-img {
     height: 200px;
+    flex-shrink: 0;
 }
 
 .project-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-info h3 {
@@ -711,6 +718,7 @@ header.scrolled .nav-social {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .tags span {
@@ -720,6 +728,13 @@ header.scrolled .nav-social {
     background: rgba(99, 102, 241, 0.1);
     color: var(--primary);
     border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.project-info .btn {
+    margin-top: auto !important;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 /* Contact Form */

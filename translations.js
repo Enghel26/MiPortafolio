@@ -45,7 +45,11 @@ const translations = {
         prj4_title: "Aseguramiento de Calidad (QA)",
         prj4_desc: "Validación y verificación exhaustiva de requerimientos de software para garantizar los estándares de calidad y certificar la correcta implementación de las funcionalidades desarrolladas.",
         prj5_title: "Mundo Airee",
-        prj5_desc: "Diseño y desarrollo de página web informativa con catálogo de productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos."
+        prj5_desc: "Diseño y desarrollo de página web informativa con catálogo de productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos.",
+        prj6_title: "Super Camionero (Super Industrial SRL)",
+        prj6_desc: "Página web oficial desarrollada con Laravel, que cuenta con un panel administrativo dinámico para gestionar y actualizar en tiempo real las informaciones mostradas.",
+        prj7_title: "Sistema de Vacaciones Super Camionero",
+        prj7_desc: "Software web empresarial para la gestión y control integral de vacaciones y permisos laborales de los colaboradores, automatizando solicitudes y flujos de aprobación."
     },
     en: {
         nav_home: "Home",
@@ -94,6 +98,10 @@ const translations = {
         prj4_title: "Quality Assurance (QA)",
         prj4_desc: "Comprehensive validation and verification of software requirements to guarantee quality standards and certify the correct implementation of developed functionalities.",
         prj5_title: "Mundo Airee",
-        prj5_desc: "Design and development of an informative website with a product catalog built in Laravel, optimized for showcasing equipment and services."
+        prj5_desc: "Design and development of an informative website with a product catalog built in Laravel, optimized for showcasing equipment and services.",
+        prj6_title: "Super Camionero (Super Industrial SRL)",
+        prj6_desc: "Official corporate website developed with Laravel, featuring a dynamic administrative panel to update and manage displayed information in real-time.",
+        prj7_title: "Super Camionero Vacation System",
+        prj7_desc: "Enterprise web software for the management and tracking of employee vacations and leaves, streamlining request workflows and administrative approvals."
     }
 };

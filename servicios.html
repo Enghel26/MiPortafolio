@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Web Developer</title>
-    <link rel="stylesheet" href="style.css?v=2.1">
+    <title>Servicios | Enghel Mejía Severino</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22 fill=%22%236366f1%22 font-family=%22monospace%22 font-weight=%22bold%22>&lt;/&gt;</text></svg>">
+    <link rel="stylesheet" href="style.css?v=3.1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="header" class="scrolled">
         <div class="container nav-container">
-            <nav>
-                <div class="logo">Portafolio <span>&lt;/&gt;</span></div>
+            <nav aria-label="Navegación principal">
+                <a href="index.html#home" class="logo">Portafolio <span>&lt;/&gt;</span></a>
                 <div class="nav-right">
                     <ul class="nav-links">
                         <li><a href="index.html#home" data-i18n="nav_home">Inicio</a></li>
@@ -25,19 +29,20 @@
                         <li><a href="index.html#contact" data-i18n="nav_contact">Contacto</a></li>
                     </ul>
                     <div class="nav-socials-group">
-                        <a href="https://wa.me/18295561574" target="_blank" class="nav-social" aria-label="WhatsApp">
+                        <a href="https://wa.me/18295561574" target="_blank" rel="noopener noreferrer"
+                            class="nav-social" aria-label="WhatsApp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="brand-whatsapp">
+                                stroke-linejoin="round" class="brand-whatsapp" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049a11.802 11.802 0 001.583 5.877L0 24l6.305-1.654a11.807 11.807 0 005.738 1.482h.005c6.634 0 12.045-5.413 12.048-12.051a11.75 11.75 0 00-3.483-8.52z" />
                             </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
-                            class="nav-social" aria-label="LinkedIn">
+                            rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="brand-linkedin">
+                                stroke-linejoin="round" class="brand-linkedin" aria-hidden="true">
                                 <path
                                     d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                 </path>
@@ -46,9 +51,11 @@
                             </svg>
                         </a>
                     </div>
-                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
                             <line x1="3" y1="12" x2="21" y2="12"></line>
                             <line x1="3" y1="6" x2="21" y2="6"></line>
                             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -58,7 +65,7 @@
                     <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
                         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <circle cx="12" cy="12" r="5"></circle>
                             <line x1="12" y1="1" x2="12" y2="3"></line>
                             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -71,7 +78,7 @@
                         </svg>
                         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </button>
@@ -80,21 +87,26 @@
         </div>
     </header>
 
-    <main style="padding-top: 120px;">
+    <main style="padding-top: 110px;">
         <section class="section">
-            <div id="skill-rain" class="skill-rain-container"></div>
-            <div class="container">
-                <h2 class="section-title" data-i18n="services_title" style="text-align: center;">Mis
-                    <span>Servicios</span>
+            <div class="aurora-orb aurora-left" aria-hidden="true"></div>
+            <div class="aurora-orb aurora-right" aria-hidden="true"></div>
+            <div id="skill-rain" class="skill-rain-container" aria-hidden="true"></div>
+            <div class="container" style="text-align: center;">
+                <span class="section-eyebrow" data-i18n="services_badge">SOLUCIONES DIGITALES</span>
+                <h2 class="section-title" data-i18n="services_title" style="text-align: center; margin-bottom: 0.75rem;">
+                    Mis <span>Servicios</span>
                 </h2>
+                <p class="section-subtitle" style="margin: 0 auto 2rem auto;" data-i18n="services_subtitle">Desarrollo de
+                    software a medida y aseguramiento de calidad con estándares profesionales.</p>
 
                 <div class="services-grid">
                     <!-- Servicio 1: Desarrollo Freelance -->
-                    <div class="service-card glass">
-                        <div class="service-img" style="display: flex; align-items: center; justify-content: center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                    <article class="service-card glass">
+                        <div class="service-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
+                                stroke-linejoin="round" aria-hidden="true">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                                 <line x1="8" y1="21" x2="16" y2="21"></line>
                                 <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -107,14 +119,14 @@
                         <p data-i18n="srv_web_desc">Desarrollo de todo tipo de sistemas web a medida, desde plataformas
                             de gestión de información hasta páginas informativas, utilizando HTML, CSS, JavaScript,
                             Laravel y Blazor. Enfoque en escalabilidad y UX.</p>
-                    </div>
+                    </article>
 
                     <!-- Servicio 2: Proyectos Colaborativos -->
-                    <div class="service-card glass">
-                        <div class="service-img" style="display: flex; align-items: center; justify-content: center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                    <article class="service-card glass">
+                        <div class="service-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
+                                stroke-linejoin="round" aria-hidden="true">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -122,16 +134,17 @@
                             </svg>
                         </div>
                         <h3 data-i18n="srv_collab_title">Proyectos Colaborativos</h3>
-                        <p data-i18n="srv_collab_desc">Participación proactiva en el desarrollo de ideas y optimización de
-                            código en equipos multidisciplinarios, buscando siempre la excelencia técnica y funcional.</p>
-                    </div>
+                        <p data-i18n="srv_collab_desc">Participación proactiva en el desarrollo de ideas y optimización
+                            de código en equipos multidisciplinarios, buscando siempre la excelencia técnica y
+                            funcional.</p>
+                    </article>
 
                     <!-- Servicio 3: Aseguramiento de Calidad (QA) -->
-                    <div class="service-card glass">
-                        <div class="service-img" style="display: flex; align-items: center; justify-content: center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                    <article class="service-card glass">
+                        <div class="service-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
+                                stroke-linejoin="round" aria-hidden="true">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 <polyline points="9 12 11 14 15 10"></polyline>
                             </svg>
@@ -140,14 +153,14 @@
                         <p data-i18n="srv_qa_desc">Validación y verificación exhaustiva de requerimientos de software
                             para garantizar los estándares de calidad y certificar la correcta implementación de las
                             funcionalidades desarrolladas.</p>
-                    </div>
+                    </article>
 
                     <!-- Servicio 4: Mejoras de Proyectos -->
-                    <div class="service-card glass">
-                        <div class="service-img" style="display: flex; align-items: center; justify-content: center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                    <article class="service-card glass">
+                        <div class="service-img">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
+                                stroke-linejoin="round" aria-hidden="true">
                                 <path
                                     d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
                                 </path>
@@ -156,15 +169,14 @@
                         <h3 data-i18n="srv_maint_title">Mejoras de Proyectos</h3>
                         <p data-i18n="srv_maint_desc">Realizo mejoras continuas y actualizaciones para proyectos ya
                             realizados, asegurando que sigan creciendo y adaptándose a nuevas necesidades.</p>
-                    </div>
+                    </article>
                 </div>
-
             </div>
         </section>
     </main>
 
     <footer>
-        <div id="skill-rain-footer" class="skill-rain-container"></div>
+        <div id="skill-rain-footer" class="skill-rain-container" aria-hidden="true"></div>
         <div class="container footer-content" style="justify-content: center;">
             <p>&copy; <span data-i18n="footer_rights">2026 Portafolio Profesional. Todos los derechos reservados.</span>
             </p>

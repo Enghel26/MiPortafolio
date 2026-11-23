@@ -207,6 +207,122 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(aboutContainer);
     }
 
+    // Projects Horizontal Dynamic Carousel Controls & Auto-Play
+    const projectsSlider = document.getElementById('projects-slider');
+    const projectsPrev = document.getElementById('projects-prev');
+    const projectsNext = document.getElementById('projects-next');
+    const projectsDotsContainer = document.getElementById('projects-dots');
+
+    if (projectsSlider && projectsPrev && projectsNext) {
+        const cards = Array.from(projectsSlider.querySelectorAll('.project-card'));
+        let autoPlayTimer = null;
+        const AUTO_PLAY_INTERVAL = 3500;
+
+        const getScrollAmount = () => {
+            const firstCard = cards[0];
+            return firstCard ? firstCard.offsetWidth + 20 : 310;
+        };
+
+        // Build pagination dots
+        if (projectsDotsContainer && cards.length > 0) {
+            cards.forEach((_, idx) => {
+                const dot = document.createElement('button');
+                dot.className = `carousel-dot${idx === 0 ? ' active' : ''}`;
+                dot.setAttribute('aria-label', `Ir al proyecto ${idx + 1}`);
+                dot.addEventListener('click', () => {
+                    projectsSlider.scrollTo({
+                        left: idx * getScrollAmount(),
+                        behavior: 'smooth'
+                    });
+                    resetAutoPlay();
+                });
+                projectsDotsContainer.appendChild(dot);
+            });
+        }
+
+        const updateActiveDot = () => {
+            if (!projectsDotsContainer) return;
+            const dots = projectsDotsContainer.querySelectorAll('.carousel-dot');
+            const maxScroll = projectsSlider.scrollWidth - projectsSlider.clientWidth;
+            let activeIdx = Math.round(projectsSlider.scrollLeft / getScrollAmount());
+            if (projectsSlider.scrollLeft >= maxScroll - 10) {
+                activeIdx = cards.length - 1;
+            }
+            activeIdx = Math.max(0, Math.min(cards.length - 1, activeIdx));
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === activeIdx);
+            });
+        };
+
+        const stepNext = () => {
+            const maxScroll = projectsSlider.scrollWidth - projectsSlider.clientWidth;
+            if (projectsSlider.scrollLeft >= maxScroll - 15) {
+                projectsSlider.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                projectsSlider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+            }
+        };
+
+        const stepPrev = () => {
+            if (projectsSlider.scrollLeft <= 15) {
+                const maxScroll = projectsSlider.scrollWidth - projectsSlider.clientWidth;
+                projectsSlider.scrollTo({ left: maxScroll, behavior: 'smooth' });
+            } else {
+                projectsSlider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+            }
+        };
+
+        const startAutoPlay = () => {
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            stopAutoPlay();
+            autoPlayTimer = setInterval(stepNext, AUTO_PLAY_INTERVAL);
+        };
+
+        const stopAutoPlay = () => {
+            if (autoPlayTimer) {
+                clearInterval(autoPlayTimer);
+                autoPlayTimer = null;
+            }
+        };
+
+        const resetAutoPlay = () => {
+            stopAutoPlay();
+            startAutoPlay();
+        };
+
+        projectsPrev.addEventListener('click', () => {
+            stepPrev();
+            resetAutoPlay();
+        });
+
+        projectsNext.addEventListener('click', () => {
+            stepNext();
+            resetAutoPlay();
+        });
+
+        projectsSlider.addEventListener('scroll', updateActiveDot, { passive: true });
+        projectsSlider.addEventListener('mouseenter', stopAutoPlay);
+        projectsSlider.addEventListener('mouseleave', startAutoPlay);
+        projectsSlider.addEventListener('touchstart', stopAutoPlay, { passive: true });
+        projectsSlider.addEventListener('touchend', startAutoPlay, { passive: true });
+        projectsSlider.addEventListener('focusin', stopAutoPlay);
+        projectsSlider.addEventListener('focusout', startAutoPlay);
+
+        projectsSlider.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                stepNext();
+                resetAutoPlay();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                stepPrev();
+                resetAutoPlay();
+            }
+        });
+
+        startAutoPlay();
+    }
+
     // Mobile Menu Toggle logic
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const navLinksContainer = document.querySelector('.nav-links');

@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer | Portfolio</title>
+    <title>Enghel Mejía Severino | Full-Stack Web Developer</title>
     <meta name="description"
-        content="Portfolio profesional de Desarrollador Web con enfoque en interfaces modernas y alto rendimiento.">
+        content="Portfolio profesional de Desarrollador Web Full-Stack con enfoque en interfaces modernas, Laravel, Blazor, QA y alto rendimiento.">
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22 fill=%22%233498db%22 font-family=%22monospace%22 font-weight=%22bold%22>&lt;/&gt;</text></svg>">
-    <link rel="stylesheet" href="style.css?v=2.1">
-    <!-- Google Fonts -->
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22 fill=%22%236366f1%22 font-family=%22monospace%22 font-weight=%22bold%22>&lt;/&gt;</text></svg>">
+    <link rel="stylesheet" href="style.css?v=3.1">
+    <!-- Google Fonts: UI/UX Pro Max Pairing (Space Grotesk + Plus Jakarta Sans + JetBrains Mono) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
         <div class="container nav-container">
-            <nav>
-                <div class="logo">Portafolio <span>&lt;/&gt;</span></div>
+            <nav aria-label="Navegación principal">
+                <a href="#home" class="logo">Portafolio <span>&lt;/&gt;</span></a>
                 <div class="nav-right">
                     <ul class="nav-links">
                         <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
@@ -30,19 +32,20 @@
                         <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
                     </ul>
                     <div class="nav-socials-group">
-                        <a href="https://wa.me/18295561574" target="_blank" class="nav-social" aria-label="WhatsApp">
+                        <a href="https://wa.me/18295561574" target="_blank" rel="noopener noreferrer"
+                            class="nav-social" aria-label="WhatsApp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="brand-whatsapp">
+                                stroke-linejoin="round" class="brand-whatsapp" aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049a11.802 11.802 0 001.583 5.877L0 24l6.305-1.654a11.807 11.807 0 005.738 1.482h.005c6.634 0 12.045-5.413 12.048-12.051a11.75 11.75 0 00-3.483-8.52z" />
                             </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
-                            class="nav-social" aria-label="LinkedIn">
+                            rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="brand-linkedin">
+                                stroke-linejoin="round" class="brand-linkedin" aria-hidden="true">
                                 <path
                                     d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                 </path>
@@ -51,9 +54,11 @@
                             </svg>
                         </a>
                     </div>
-                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
                             <line x1="3" y1="12" x2="21" y2="12"></line>
                             <line x1="3" y1="6" x2="21" y2="6"></line>
                             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -63,7 +68,7 @@
                     <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
                         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <circle cx="12" cy="12" r="5"></circle>
                             <line x1="12" y1="1" x2="12" y2="3"></line>
                             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -76,7 +81,7 @@
                         </svg>
                         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </button>
@@ -87,46 +92,82 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="carousel-container">
+            <div class="carousel-container" aria-hidden="true">
                 <div class="carousel-slide active" style="background-image: url('img/Fondo/2150010125.jpg');"></div>
                 <div class="carousel-slide" style="background-image: url('img/Fondo/61842.jpg');"></div>
                 <div class="carousel-slide" style="background-image: url('img/Fondo/82.jpg');"></div>
                 <div class="carousel-overlay"></div>
+                <div class="hero-aurora-glow"></div>
             </div>
             <div class="container" style="position: relative; z-index: 2;">
                 <div class="hero-content fade-in">
-                    <h1 class="code-title">
-                        <span class="keyword">string</span> <span class="variable">nombre</span> = <span
-                            class="string">"</span><span id="typewriter-name" class="string"></span><span
-                            class="string">"</span>;
-                    </h1>
+                    <div class="status-pill">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span data-i18n="hero_badge">Disponible para Proyectos Freelance</span>
+                    </div>
+
+                    <div class="ide-code-window">
+                        <div class="ide-window-bar" aria-hidden="true">
+                            <div class="ide-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="ide-filename">DeveloperProfile.cs</span>
+                        </div>
+                        <h1 class="code-title">
+                            <span class="keyword">string</span> <span class="variable">nombre</span> = <span
+                                class="string">"</span><span id="typewriter-name" class="string"></span><span
+                                class="string">"</span>;
+                        </h1>
+                    </div>
+
                     <p id="typewriter-desc"></p>
+
                     <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary" data-i18n="hero_ver_proyectos">Ver Proyectos</a>
-                        <a href="#contact" class="btn glass" style="margin-left: 1rem; color: white;"
-                            data-i18n="hero_contactar">Contactar</a>
+                        <a href="#projects" class="btn btn-primary">
+                            <span data-i18n="hero_ver_proyectos">Ver Proyectos</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary glass" data-i18n="hero_contactar">Contactar</a>
+                    </div>
+
+                    <div class="hero-tech-strip" aria-label="Tecnologías principales">
+                        <span>Laravel</span>
+                        <span>Blazor</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>QA Testing</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="about" class="section">
-            <div id="hobby-rain" class="skill-rain-container"></div>
+            <div class="aurora-orb aurora-left" aria-hidden="true"></div>
+            <div id="hobby-rain" class="skill-rain-container" aria-hidden="true"></div>
             <div class="container">
                 <div class="grid-2">
                     <div class="about-text">
+                        <span class="section-eyebrow" data-i18n="about_badge">PERFIL PROFESIONAL</span>
                         <h2 class="section-title" data-i18n="about_title">Sobre <span>Mí</span></h2>
-                        <p id="typewriter-about"></p>
-
-                        <p id="typewriter-hobbies"></p>
-
+                        <div class="about-prose glass">
+                            <p id="typewriter-about"></p>
+                            <p id="typewriter-hobbies" class="hobbies-text"></p>
+                        </div>
 
                         <div class="stats-grid modern">
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                                         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                                     </svg>
@@ -139,9 +180,9 @@
 
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                         <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                                     </svg>
@@ -154,9 +195,9 @@
 
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <polyline points="16 18 22 12 16 6"></polyline>
                                         <polyline points="8 6 2 12 8 18"></polyline>
                                     </svg>
@@ -169,9 +210,9 @@
 
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <circle cx="12" cy="12" r="10"></circle>
                                         <line x1="2" y1="12" x2="22" y2="12"></line>
                                         <path
@@ -187,9 +228,9 @@
 
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                                     </svg>
@@ -202,9 +243,9 @@
 
                             <div class="stat-card glass interactive">
                                 <div class="stat-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        stroke-linejoin="round" aria-hidden="true">
                                         <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                                     </svg>
                                 </div>
@@ -215,86 +256,138 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-visual glass">
-                        <img src="img/Fotos/Perfil.png" alt="Enghel Mejía Severino"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="placeholder-img" style="display: none;">Enghel</div>
+
+                    <div class="about-visual-wrapper">
+                        <div class="about-visual glass">
+                            <img src="img/Fotos/Perfil.png" alt="Enghel Mejía Severino"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="placeholder-img" style="display: none;">Enghel</div>
+                        </div>
+                        <div class="profile-floating-badge glass">
+                            <span class="badge-code">&lt;FullStack /&gt;</span>
+                            <span class="badge-sub">Web Dev &amp; QA Engineer</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
-            <div id="skill-rain" class="skill-rain-container"></div>
-            <div class="container">
-                <h2 class="section-title" data-i18n="projects_title">Proyectos <span>Destacados</span></h2>
-                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; align-items: stretch;">
+            <div class="aurora-orb aurora-right" aria-hidden="true"></div>
+            <div id="skill-rain" class="skill-rain-container" aria-hidden="true"></div>
+            <div class="container projects-wide-container">
+                <div class="projects-header">
+                    <div class="projects-title-group">
+                        <span class="section-eyebrow" data-i18n="projects_badge">PORTAFOLIO DE CLIENTES</span>
+                        <h2 class="section-title" data-i18n="projects_title" style="margin-bottom: 0.4rem;">Proyectos
+                            <span>Destacados</span>
+                        </h2>
+                        <p class="section-subtitle" data-i18n="projects_subtitle">Desliza horizontalmente para explorar
+                            las soluciones web y sistemas desarrollados para clientes reales.</p>
+                    </div>
+                    <div class="projects-nav">
+                        <button id="projects-prev" class="projects-nav-btn glass" aria-label="Proyecto anterior">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button id="projects-next" class="projects-nav-btn glass" aria-label="Siguiente proyecto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projects-slider" tabindex="0" aria-label="Carrusel horizontal de proyectos">
                     <!-- ============================================================ -->
                     <!-- [PROYECTO FIJADO #1]: MANTENER SIEMPRE A PRAGMATICA SRL DE PRIMERO -->
                     <!-- ============================================================ -->
-                    <div class="project-card glass" id="project-pragmatica" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
+                    <article class="project-card glass" id="project-pragmatica">
+                        <div class="project-img">
+                            <span class="project-index">01</span>
                             <img src="img/Clientes/PRAGMATICA.png" alt="Logo Pragmatica SRL"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="placeholder-img" style="display: none; color: #333;">Pragmatica SRL</div>
                         </div>
-                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+                        <div class="project-info">
                             <div class="project-body">
                                 <h3 data-i18n="prj1_title">Pragmatica SRL</h3>
-                                <p data-i18n="prj1_desc">Diseño y desarrollo de la página web corporativa oficial, enfocada
-                                    en soluciones
-                                    empresariales y consultoría.</p>
-                                <div class="tags" style="margin-bottom: 1.5rem;">
+                                <p data-i18n="prj1_desc">Diseño y desarrollo de la página web corporativa oficial,
+                                    enfocada en soluciones empresariales y consultoría.</p>
+                                <div class="tags">
                                     <span>HTML/CSS</span>
                                     <span>JavaScript</span>
                                     <span>UX/UI</span>
                                 </div>
                             </div>
-                            <a href="https://www.pragmatica.com.do/index.html" target="_blank" class="btn btn-primary"
-                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem; display: block;"
-                                data-i18n="visit_site">Visitar Sitio</a>
+                            <a href="https://www.pragmatica.com.do/index.html" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary project-cta">
+                                <span data-i18n="visit_site">Visitar Sitio</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Proyecto 2: Mundo Airee -->
-                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
+                    <article class="project-card glass">
+                        <div class="project-img">
+                            <span class="project-index">02</span>
                             <img src="img/Clientes/MundoAiree.jpg" alt="Logo Mundo Airee"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="placeholder-img" style="display: none; color: #333;">Mundo Airee</div>
                         </div>
-                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
+                        <div class="project-info">
                             <div class="project-body">
                                 <h3 data-i18n="prj5_title">Mundo Airee</h3>
                                 <p data-i18n="prj5_desc">Diseño y desarrollo de página web informativa con catálogo de
-                                    productos desarrollada en Laravel, optimizada para la consulta de servicios y equipos.</p>
-                                <div class="tags" style="margin-bottom: 1.5rem;">
+                                    productos desarrollada en Laravel, optimizada para la consulta de servicios y
+                                    equipos.</p>
+                                <div class="tags">
                                     <span>Laravel</span>
                                     <span>PHP</span>
                                     <span>HTML/CSS</span>
                                     <span>JavaScript</span>
                                 </div>
                             </div>
-                            <a href="https://mundoairee.com/" target="_blank" class="btn btn-primary"
-                                style="margin-top: auto; width: 100%; text-align: center; padding: 0.5rem; display: block;"
-                                data-i18n="visit_site">Visitar Sitio</a>
+                            <a href="https://mundoairee.com/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary project-cta">
+                                <span data-i18n="visit_site">Visitar Sitio</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Proyecto 3: Super Camionero (Super Industrial SRL) -->
-                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
+                    <article class="project-card glass">
+                        <div class="project-img">
+                            <span class="project-index">03</span>
                             <img src="img/Clientes/SuperoCamioneroV2.png" alt="Super Camionero (Super Industrial SRL)"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="placeholder-img" style="display: none; color: #333;">Super Camionero</div>
                         </div>
-                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                        <div class="project-info">
                             <div class="project-body">
                                 <h3 data-i18n="prj6_title">Super Camionero (Super Industrial SRL)</h3>
-                                <p data-i18n="prj6_desc">Página web oficial desarrollada con Laravel, que cuenta con un panel administrativo dinámico para gestionar y actualizar en tiempo real las informaciones mostradas.</p>
+                                <p data-i18n="prj6_desc">Página web oficial desarrollada con Laravel, que cuenta con un
+                                    panel administrativo dinámico para gestionar y actualizar en tiempo real las
+                                    informaciones mostradas.</p>
                                 <div class="tags">
                                     <span>Laravel</span>
                                     <span>PHP</span>
@@ -303,21 +396,29 @@
                                     <span>JavaScript</span>
                                 </div>
                             </div>
+                            <div class="project-badge-footer">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                <span data-i18n="internal_system">Sistema Empresarial</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Proyecto 4: Sistema de Vacaciones Super Camionero -->
-                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
-                            <img src="img/Clientes/SuperCamionero_Vacaciones.jpg" alt="Sistema de Vacaciones Super Camionero"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 15px;">
-                            <div class="placeholder-img" style="display: none; color: #333;">Vacaciones & Permisos</div>
+                    <article class="project-card glass">
+                        <div class="project-img">
+                            <span class="project-index">04</span>
+                            <img src="img/Clientes/SuperCamionero_Vacaciones.jpg"
+                                alt="Sistema de Vacaciones Super Camionero"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="placeholder-img" style="display: none; color: #333;">Vacaciones &amp; Permisos
+                            </div>
                         </div>
-                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                        <div class="project-info">
                             <div class="project-body">
                                 <h3 data-i18n="prj7_title">Sistema de Vacaciones Super Camionero</h3>
-                                <p data-i18n="prj7_desc">Software web empresarial para la gestión y control integral de vacaciones y permisos laborales de los colaboradores, automatizando solicitudes y flujos de aprobación.</p>
+                                <p data-i18n="prj7_desc">Software web empresarial para la gestión y control integral de
+                                    vacaciones y permisos laborales de los colaboradores, automatizando solicitudes y
+                                    flujos de aprobación.</p>
                                 <div class="tags">
                                     <span>Web App</span>
                                     <span>Laravel / PHP</span>
@@ -326,46 +427,91 @@
                                     <span>Vacaciones</span>
                                 </div>
                             </div>
+                            <div class="project-badge-footer">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                <span data-i18n="internal_system">Sistema Empresarial</span>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Proyecto 5: CEO Consultoría -->
-                    <div class="project-card glass" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="project-img" style="background: white; height: 200px; flex-shrink: 0;">
+                    </article>
+
+                    <!-- Proyecto 5: The Greek by Chef Alex -->
+                    <article class="project-card glass">
+                        <div class="project-img">
+                            <span class="project-index">05</span>
+                            <img src="img/Clientes/logo.jpeg" alt="The Greek by Chef Alex"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="placeholder-img" style="display: none; color: #333;">The Greek by Chef Alex
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-body">
+                                <h3 data-i18n="prj8_title">The Greek by Chef Alex</h3>
+                                <p data-i18n="prj8_desc">Diseño y desarrollo de página web con sistema de reservaciones
+                                    en línea desarrollada en Laravel para su Food Truck en Miami, optimizando la gestión
+                                    de reservas y la experiencia de sus clientes.</p>
+                                <div class="tags">
+                                    <span>Laravel</span>
+                                    <span>PHP</span>
+                                    <span>Reservaciones</span>
+                                    <span>MySQL</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="project-badge-footer">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                <span data-i18n="internal_system">Sistema Empresarial</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 6: CEO Consultoría -->
+                    <article class="project-card glass">
+                        <div class="project-img">
+                            <span class="project-index">06</span>
                             <img src="img/Clientes/Ceo.png" alt="Logo CEO Consultoría"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 20px;">
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="placeholder-img" style="display: none; color: #333;">CEO Consultoría</div>
                         </div>
-                        <div class="project-info" style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+                        <div class="project-info">
                             <div class="project-body">
                                 <h3 data-i18n="prj2_title">CEO Consultoría</h3>
-                                <p data-i18n="prj2_desc">Sistema de inventario para dispositivos móviles realizado durante
-                                    pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.</p>
+                                <p data-i18n="prj2_desc">Sistema de inventario para dispositivos móviles realizado
+                                    durante pasantía en CEO Consultoría. Permite gestionar productos en tiempo real.</p>
                                 <div class="tags">
                                     <span>HTML/CSS</span>
                                     <span>JavaScript</span>
                                     <span>API REST</span>
                                 </div>
                             </div>
+                            <div class="project-badge-footer">
+                                <span class="status-dot" aria-hidden="true"></span>
+                                <span data-i18n="internal_system">Sistema Empresarial</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <div class="projects-carousel-dots" id="projects-dots" aria-label="Indicadores de proyectos"></div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <div id="skill-rain-contact" class="skill-rain-container"></div>
+            <div id="skill-rain-contact" class="skill-rain-container" aria-hidden="true"></div>
             <div class="container" style="text-align: center;">
-                <h2 class="section-title" data-i18n="contact_title">¿Tienes un <span>Proyecto?</span></h2>
+                <span class="section-eyebrow" data-i18n="contact_badge">CONECTEMOS</span>
+                <h2 class="section-title" data-i18n="contact_title" style="margin-bottom: 0.75rem;">¿Tienes un
+                    <span>Proyecto?</span>
+                </h2>
+                <p class="section-subtitle" style="margin: 0 auto 2.5rem auto;" data-i18n="contact_subtitle">
+                    Transformemos tu idea en una plataforma web moderna, rápida y escalable.</p>
 
                 <div class="contact-interactive-wrapper">
-
                     <div id="contact-options" class="contact-options-container">
-                        <a href="https://wa.me/18295561574" target="_blank" class="glass contact-option-card">
+                        <a href="https://wa.me/18295561574" target="_blank" rel="noopener noreferrer"
+                            class="glass contact-option-card">
                             <div class="option-icon whatsapp">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" aria-hidden="true">
                                     <path
                                         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .004 5.412.001 12.049a11.802 11.802 0 001.583 5.877L0 24l6.305-1.654a11.807 11.807 0 005.738 1.482h.005c6.634 0 12.045-5.413 12.048-12.051a11.75 11.75 0 00-3.483-8.52z" />
                                 </svg>
@@ -376,9 +522,9 @@
 
                         <a href="mailto:enghemejia4@gmail.com" class="glass contact-option-card">
                             <div class="option-icon email">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" aria-hidden="true">
                                     <path
                                         d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
                                     </path>
@@ -390,11 +536,11 @@
                         </a>
 
                         <a href="https://www.linkedin.com/in/enghel-mej%C3%ADa-severino-620740282/" target="_blank"
-                            class="glass contact-option-card">
+                            rel="noopener noreferrer" class="glass contact-option-card">
                             <div class="option-icon linkedin">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke-linejoin="round" aria-hidden="true">
                                     <path
                                         d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                     </path>
@@ -409,11 +555,10 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div id="skill-rain-footer" class="skill-rain-container"></div>
+        <div id="skill-rain-footer" class="skill-rain-container" aria-hidden="true"></div>
         <div class="container footer-content" style="justify-content: center;">
             <p>&copy; <span data-i18n="footer_rights">2026 Portafolio Profesional. Todos los derechos reservados.</span>
             </p>
@@ -422,7 +567,6 @@
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
